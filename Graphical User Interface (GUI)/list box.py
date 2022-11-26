@@ -1,0 +1,17 @@
+# GUI - list box
+from tkinter import *
+top=Tk()
+lst=Listbox(top,height=10)
+lst.insert(END,"Saturday")
+lst.insert(END,"Sunday")
+lst.insert(END,"Monday")
+lst.insert(END,"Tuesday")
+lst.insert(END,"Wednesday")
+lst.insert(END,"Thursday")
+lst.insert(END,"Friday")
+lst.pack()
+chk1=Checkbutton(top,text="yes",onvalue='1',offvalue=0,height=1,width=15)
+chk1.pack()
+chk2=Checkbutton(top,text="no",onvalue='1',offvalue=0,height=1,width=20)
+chk2.pack()
+top.mainloop()
